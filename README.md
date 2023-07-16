@@ -1,5 +1,7 @@
 install packages first with npm i
 
+add a .env file and define PORT accordingly
+for e.g. PORT=3005
 TEST =>
 npm run test
 dev =>
