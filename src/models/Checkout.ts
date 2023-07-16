@@ -123,38 +123,3 @@ export class Checkout {
     return this.pricingRules.find((rule) => rule.sku === sku);
   }
 }
-
-const co = new Checkout(DefaultPricingRule);
-// co.scan("op10");
-// co.scan("op11");
-// co.scan("op11");
-// co.scan("op11");
-// co.scan("op11");
-// co.scan("buds");
-// co.scan("buds");
-// co.scan("buds");
-// co.scan("buds");
-// co.scan("buds");
-// co.scan("buds");
-// co.scan("buds");
-// co.scan("buds");
-// co.scan("buds");
-// co.scan("buds");
-// co.scan("buds");
-// co.scan("buds");
-// co.scan("buds");
-// co.scan("buds");
-// co.scan("buds");
-// co.scan("buds");
-// co.scan("wtch");
-co.scan("wtch");
-co.scan("op11");
-co.scan("op11");
-co.scan("op11");
-co.scan("buds");
-co.scan("buds");
-co.scan("op11");
-co.scan("op11");
-const total = co.total();
-
-console.log("Total:", total);
