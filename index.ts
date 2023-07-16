@@ -7,11 +7,14 @@ dotenv.config();
 
 const app: Express = express();
 const port = process.env.PORT;
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json()); // To parse the incoming requests with JSON payloads
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Health Check");
 });
 app.post("/getCheckoutTotal", (req: Request, res: Response) => {
+  console.log("req.body", req.body);
   const reqBody = req.body;
   let { items, pricingRule } = reqBody;
   if (!items || items?.length <= 0) {
